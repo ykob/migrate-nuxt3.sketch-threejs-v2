@@ -10,6 +10,17 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   mounted() {
+    let timer: number = 0
+
+    const debounceSetSize = () => {
+      window.clearTimeout(timer)
+      timer = window.setTimeout(() => {
+        this.setSize()
+      }, 200)
+    }
+
+    window.addEventListener('resize', debounceSetSize)
+    window.addEventListener('orientationchange', debounceSetSize)
     this.setSize()
   },
   methods: {
