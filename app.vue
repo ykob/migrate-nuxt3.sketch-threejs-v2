@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 class="text-xl">Migrate from Nuxt2 to Nuxt3 on sketch-threejs-v2</h1>
     <nuxt-layout />
     <canvas id="canvas-webgl" />
   </div>
