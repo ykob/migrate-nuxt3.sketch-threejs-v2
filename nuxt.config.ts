@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['@/assets/css/tailwind.css'],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   vite: {
     plugins: [glsl()],
   },
