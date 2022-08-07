@@ -6,10 +6,10 @@ export default defineNuxtConfig({
   build: {
     postcss: {
       postcssOptions: {},
-    }
+    },
   },
-  buildModules: ['@nuxtjs/tailwindcss'],
   css: ['@/assets/css/tailwind.css'],
+  modules: ['@nuxtjs/tailwindcss'],
   vite: {
     plugins: [glsl()],
   },
